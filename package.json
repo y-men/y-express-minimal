@@ -1,0 +1,33 @@
+{
+  "name": "y-express-minimal",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js",
+    "build": "babel src -d dist",
+    "serve": "babel-node src/app.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "console-table-printer": "^1.2.13",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "redis": "^3.0.2",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "helmet": "^3.22.0"
+  }
+}

@@ -1,0 +1,22 @@
+version: '3'
+services:
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+  redsmin-proxy:
+    image: "redsmin/proxy"
+    environment:
+      - REDSMIN_KEY=5bb35ab061941206e518335f
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+#  y-minimal:
+#    build: .
+#    environment:
+#      - NODEMIN.REDIS_URL=redis://redis:6379
+#    depends_on:
+#      - redis
+#    ports:
+#      - "3000:3000"
+

@@ -1,0 +1,6 @@
+
+###
+GET http://localhost:3000/api/cache?key="mykey"
+Accept: application/json
+
+###
