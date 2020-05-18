@@ -1,9 +1,17 @@
 # Minimal Express server
 
+- Server
+    - Folder structure best practices
 - express  [Y]
 - helmet [Y]
-- morgan
+- Logging
+    - morgan
+    - access logging
+    - access monitor
 - swagger [Y]
+- API GTW
+    - Kong
+    - Traffik
 - docker 
     - docker compose [Y]
     - redis  [Y]           
@@ -11,9 +19,17 @@
     - Dockerfile for node application
     - persist volume
 - circle-ci
-- deploy to heroku
+    - Build container
+    - Deploy container to heroku
+    - Build badges
+- deploy to heroku [doing]
 - Gulp or Grunt to delploy 
-- Environemtn handling: local docker/ etc...
+- Env/ config handling: local docker/ etc... 
+- Documentation
+    - Markup
+    - Test results
+    - Site ( aka maven site) 
+    - Display swagger
 
 ## Display
 - ejs
@@ -29,5 +45,7 @@
 - babel [Y]
 
 ## Testing
-- test helmet - sumulate conditions
-- Jest/ Mocha
+- test helmet - simulate conditions
+- Jest/ Mocha 
+    - Chai
+    - Test reporting

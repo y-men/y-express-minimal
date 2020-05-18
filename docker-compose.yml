@@ -11,12 +11,12 @@ services:
       - REDIS_URL=redis://redis:6379
     depends_on:
       - redis
-#  y-minimal:
-#    build: .
-#    environment:
-#      - NODEMIN.REDIS_URL=redis://redis:6379
-#    depends_on:
-#      - redis
-#    ports:
-#      - "3000:3000"
+  y-minimal:
+    build: .
+    environment:
+      - NODEMIN.REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    ports:
+      - "3000:3000"
 
